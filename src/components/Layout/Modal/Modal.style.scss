@@ -1,0 +1,40 @@
+.modal {
+  &__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    transition: opacity 0.15s linear;
+  }
+  &__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 32px;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease-out;
+    transform: translate(0, -25%);
+
+    .model__opened & {
+      transform: translate(0, 0);
+    }
+  }
+}

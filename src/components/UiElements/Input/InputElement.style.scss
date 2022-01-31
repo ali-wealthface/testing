@@ -1,0 +1,39 @@
+.form-control {
+  margin-bottom: 16px;
+
+  input {
+    margin: 0;
+    outline: 0;
+    line-height: 1;
+    padding: 14px;
+    font-size: 16px;
+    background: #fff;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 6px;
+    box-shadow: 0 0 0 0 transparent inset;
+    transition: color 0.1s ease, border-color 0.1s ease;
+    display: block;
+    width: 100%;
+
+    &:focus {
+      color: rgba(0, 0, 0, 0.95);
+      border-color: #85b7d9;
+      box-shadow: 0 0 0 0 rgb(34 36 38 / 35%) inset;
+    }
+  }
+  .help-text {
+    font-size: 13px;
+    color: #9f3a38;
+  }
+  &__invalid {
+    input {
+      border-color: #9f3a38;
+
+      &:focus,
+      &:hover {
+        border-color: #9f3a38;
+      }
+    }
+  }
+}
