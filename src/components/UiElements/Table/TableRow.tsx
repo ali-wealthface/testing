@@ -7,8 +7,8 @@ const TableRow: React.FC<{ rowData: Array<ReactNode | ReactElement> }> = ({
 
   return (
     <tr>
-      {rowData.map((td) => (
-        <td>{td}</td>
+      {rowData.map((td, index) => (
+        <td key={index}>{td}</td>
       ))}
     </tr>
   );

@@ -59,8 +59,6 @@ const DigitalAssets: React.FC = () => {
     // eslint-disable-next-line
   }, [data, sorting]);
 
-  console.log("Sorted", sortedDataToRender);
-
   if (isLoading) return <Loader />;
 
   if (isError)
